@@ -24,8 +24,10 @@
 ## 💪 Muscle Formula 
  
 
+
 (Music-Flower 사이트로 이동)
 [Go Exercise! 🏃!!](https://www.muscleformula.xyz)
+
 
 
 
@@ -39,7 +41,7 @@
 
 
  # 팀원소개 
-> Music-Flower Developers!
+> Muscle Formula Developers!
 
 
 
