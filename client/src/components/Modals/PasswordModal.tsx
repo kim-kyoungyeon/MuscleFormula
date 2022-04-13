@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { useDispatch, useSelector } from "react-redux";
 import type { RootState, AppDispatch } from "../../store";
 import { axios_Put_User } from "../../axios";
+import swal from "sweetalert";
+
 export const ModalBackdrop = styled.div`
   position: fixed;
   z-index: 999;
@@ -18,7 +20,7 @@ export const ModalBackdrop = styled.div`
 
 export const ModalContainer = styled.div`
   text-align: center;
-  margin: 120px auto;
+  margin: 1rem auto;
 `;
 
 export const ModalView = styled.div`
@@ -41,10 +43,10 @@ export const ModalView = styled.div`
       font-size: medium;
     }
     > .user-password {
-      padding: 0rem 2.8rem;
+      padding: 0rem 2rem;
     }
     > .user-password-check {
-      padding: 0rem 2.8rem;
+      padding: 0rem 2rem;
     }
     > .user-password > .input-container {
       display: flex;
@@ -59,6 +61,7 @@ export const ModalView = styled.div`
       }
     }
     > .user-password > p {
+      font-size: small;
       color: red;
     }
 
@@ -75,6 +78,7 @@ export const ModalView = styled.div`
       }
     }
     > .user-password-check > p {
+      font-size: small;
       color: red;
     }
 
@@ -135,11 +139,13 @@ const PasswordModal: React.FC<PasswordModalProps> = ({ setPasswordModal }) => {
       // })
 
       axios_Put_User(formData, user.accessToken).then(() => {
-        alert("변경되었습니다");
+        // alert("변경되었습니다");
+        swal("변경되었습니다");
         setPasswordModal((cur) => !cur);
       });
     } else {
-      alert("비밀번호 양식에 맞추어 주십시오");
+      // alert("비밀번호 양식에 맞추어 주십시오");
+      swal("비밀번호 양식에 맞추어 주십시오");
     }
   };
 

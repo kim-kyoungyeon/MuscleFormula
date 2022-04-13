@@ -1,20 +1,18 @@
 /**날짜별 운동 기록 페이지**/
-import { PC, Mobile } from "../mediaQuery";
-import Footer from "../components/Footer";
 import "../css/Records.css";
 import Record from "../components/Record";
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { useSelector } from "react-redux";
 import type { RootState } from "../store";
 import CalendarRecord from "../components/CalendarRecord";
 import NeedLogin from "../components/NeedLogin";
 import Loading from "../components/Loading";
 import {
-  axios_Delete_UserRecord,
   axios_Get_UserRecord,
   axios_Post_UserRecord,
 } from "../axios/index";
+import swal from "sweetalert";
+
 export default function Records() {
   const showToday = () => {
     let today = new Date();
@@ -50,27 +48,9 @@ export default function Records() {
 
   const [savedRecords, setSavedRecords] = useState<RecordType[]>([]);
   const [submitDay, setSubmitDay] = useState(getDate());
-  // let serverUrl = "http://localhost:4000";
   let user = useSelector((state: RootState) => state.userInfo.userInfo);
-  const submitDelete = (genre: string) => {
-    axios_Delete_UserRecord(genre, user.accessToken, submitDay).then((res) => {
-      setSavedRecords(res.data.data.exerciseInfo);
-      setRecords([]);
-    });
-    setIsLoading(false);
-    alert("운동기록이 삭제 되었습니다.");
-    // setSavedRecords(res.data.data.exerciseInfo);
-    // setRecords([]);
-  };
-
   useEffect(() => {
     if (submitDay) {
-      // axios
-      //   .get(`${serverUrl}/record?date=${submitDay}`, {
-      //     headers: {
-      //       authorization: `Bearer ${user.accessToken}`,
-      //     },
-      //   })
       axios_Get_UserRecord(submitDay, user.accessToken).then((res) => {
         setSavedRecords(res.data.data.exerciseInfo);
       });
@@ -115,7 +95,8 @@ export default function Records() {
         setRecords([]);
       });
       setIsLoading(false);
-      alert("기록되었습니다");
+      // alert();
+      swal("기록되었습니다");
     });
   };
 
@@ -145,7 +126,8 @@ export default function Records() {
 
   const addExercise = () => {
     if (exercise.genre === "") {
-      return alert("운동명을 입력하세요");
+      // return alert("운동명을 입력하세요");
+      return swal("운동명을 입력하세요");
     } else {
       setExercise({
         genre: "",
@@ -158,7 +140,7 @@ export default function Records() {
   };
 
   return (
-    <div>
+    <div id="record-container-wrapper">
       {isLogin === false ? (
         <div id="no-record-container">
           <NeedLogin />

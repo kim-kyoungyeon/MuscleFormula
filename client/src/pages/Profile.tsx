@@ -1,12 +1,10 @@
+import swal from "sweetalert";
 import "../css/Profile.css";
-import { PC, Mobile } from "../mediaQuery";
-import Footer from "../components/Footer";
 import { useDispatch, useSelector } from "react-redux";
-import type { RootState, AppDispatch } from "../store";
+import type { RootState } from "../store";
 import React, { useState, useEffect } from "react";
 import PhotoModal from "../components/Modals/PhotoModal";
 import { axios_GetNickname } from "../axios";
-import axios from "axios";
 import { EDIT_NICK } from "../reducer/userInfoReducer";
 import QuitModal from "../components/Modals/QuitModal";
 import PasswordModal from "../components/Modals/PasswordModal";
@@ -18,7 +16,6 @@ export default function Profile() {
   if (localUser !== null) {
     user = JSON.parse(localUser);
   }
-
   //photouploader 변수 선언
   const [photo, setPhoto] = useState<any>({
     file: [],
@@ -59,11 +56,11 @@ export default function Profile() {
 
   const handleProfileNick = () => {
     if (user.nickname === userNickname) {
-      return alert("동일한 닉네임입니다");
+      return swal("동일한 닉네임입니다");
     }
     if (userNicknameCheck) {
       if (userNickname.length === 0) {
-        return alert("닉네임을 입력해주세요");
+        return swal("닉네임을 입력해주세요");
       } else {
         const formData = new FormData();
         formData.append("nickname", userNickname);
@@ -77,11 +74,11 @@ export default function Profile() {
         // })
         axios_Put_User(formData, user.accessToken).then((res) => {
           dispatch(EDIT_NICK(res.data.Data.nickname));
-          return alert("닉네임이 변경되었습니다");
+          return swal("닉네임이 변경되었습니다");
         });
       }
     } else {
-      return alert("다른 닉네임을 입력해주세요");
+      return swal("다른 닉네임을 입력해주세요");
     }
   };
 

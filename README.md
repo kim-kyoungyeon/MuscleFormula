@@ -24,8 +24,10 @@
 ## 💪 Muscle Formula 
  
 
-(Muscle-Formula 사이트로 이동)
-[Go Exercise! 🏃!!](https://)
+
+(Music-Flower 사이트로 이동)
+[Go Exercise! 🏃!!](https://www.muscleformula.xyz)
+
 
 
 
@@ -35,9 +37,6 @@
 - 운동기록이 높은 상위 랭크의 유저를 확인할 수 있습니다. 
 - 마음에 드는 운동 기록 게시판을 좋아요 클릭하여 따로 볼 수 있습니다.
 - 운동 게시물을 기록하고, 공유할 수 있습니다.  
-- 지도를 통해 근처의 헬스장을 확인할 수 있습니다. 
-- 채팅을 통해 단체 운동을 진행 할 수 있습니다. 
- 
  
 
 
@@ -48,83 +47,68 @@
 
  ### 김경연 [`kimkyoungyeon`](https://github.com/kim-kyoungyeon)
 * position : Front-end 
-* Stack : 추후작성
+* Stack : Typescript, React, Styled-Component, CSS
 * contributions
-  * 추후작성
+    * SR, 일정 관리, 랜딩 페이지, 푸터 작성
+
   
-<div align=left> 
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=blue">
-<img src="https://img.shields.io/badge/NodeJS-339933?style=for-the-badge&logo=NodeJS&logoColor=green">
-<img src="https://img.shields.io/badge/ReactApp-09D3AC?style=for-the-badge&logo=ReactApp&logoColor=blue">
-<img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=VSCode&logoColor=navy">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=VSCode&logoColor=black">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=yellow">
-<img src="https://img.shields.io/badge/StyledComponent-DB7093?style=for-the-badge&logo=styledComponent&logoColor=pink">
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-</div>
-</details>
+ </details>
 <br>
+
 
  ### 손태권 [`KAPUIST`](https://github.com/KAPUIST)
 * position : Back-end 
-* Stack: 추후작성
+* Stack: Typescript, TypeORM, Express, Node.js, Mysql, AWS, Styled-Component
 * contributions
-  *  추후작성
- <div align=left> 
-<img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=VSCode&logoColor=navy">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=VSCode&logoColor=black">
-<img src="https://img.shields.io/badge/NodeJS-339933?style=for-the-badge&logo=NodeJS&logoColor=green">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=yellow">
-<img src="https://img.shields.io/badge/GitBook-3884FF?style=for-the-badge&logo=GitBook&logoColor=black">
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=skyblue">
-<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=Express&logoColor=white">
-<img src="https://img.shields.io/badge/AWS-000000?style=for-the-badge&logo=AWS&logoColor=black">
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
- </div>
-</details>
+  *  typeORM을 이용한 entity구성
+  *  OneToMany를 이용한 관계 구성
+  *  CASADE를 이용한 연관 데이터 삭제
+  *  토큰기반 인증 구현
+  *  Google OAUTH 구현
+  *  로그인, 유저, 유저운동기록, 포스트, 좋아요 CRUD 구현
+  *  데이터베이스 연결
+  *  AWS 배포
+  *  S3, CloudFront를 이용한 CDN 구축 및 정적 파일 배포
+  *  EC2, ELB, ACM을 이용, SSL, TLS를 적용한 HTTPS 통신
+  *  Route 53을 이용한 호스팅 및 도메인 연결
+
+
+ </details>
 <br>
+
 
 
 ### 양지윤 [`jiyuunyang`](https://github.com/jiyuunyang)
 * position : Front-end 
-* Stack : 추후작성
+* Stack : Typescript, React, Redux-toolkit, Styled-Component, CSS
 * contributions
-  *  추후작성
+  *  리덕스 툴킷 세팅
+  *  운동기록 페이지 작성
+  *  캘린더 컴포넌트 작성
+  *  마이페이지 작성
+  *  모달창, 탭 구현
+  *  CSS 전반 관리
 
-<div align=left> 
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=blue">
-<img src="https://img.shields.io/badge/NodeJS-339933?style=for-the-badge&logo=NodeJS&logoColor=green">
-<img src="https://img.shields.io/badge/ReactApp-09D3AC?style=for-the-badge&logo=ReactApp&logoColor=blue">
-<img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=VSCode&logoColor=navy">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=VSCode&logoColor=black">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=yellow">
-<img src="https://img.shields.io/badge/StyledComponent-DB7093?style=for-the-badge&logo=styledComponent&logoColor=pink">
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
- </div>
 </details>
 <br>
 
 
 ### 추홍욱 [`ChooHongWook`](https://github.com/ChooHongWook)
 * position : Back-end 
-* Stack: 추후작성
+* Stack: Typescript, Express, TypeORM, Mysql, React, Redux-toolkit, Styled-Component
 * contributions
-  * 추후작성
- <div align=left> 
-<img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=VSCode&logoColor=navy">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=VSCode&logoColor=black">
-<img src="https://img.shields.io/badge/NodeJS-339933?style=for-the-badge&logo=NodeJS&logoColor=green">
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=yellow">
-<img src="https://img.shields.io/badge/GitBook-3884FF?style=for-the-badge&logo=GitBook&logoColor=black">
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=skyblue">
-<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=Express&logoColor=white">
-<img src="https://img.shields.io/badge/AWS-000000?style=for-the-badge&logo=AWS&logoColor=black">
-<img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-   </div>
+  * typeORM을 이용한 entity구성
+  * OneToMany를 이용한 관계 구성
+  * Post, User, Comment CRUD 엔드포인트 작성
+  * 회원가입 페이지 유효성 검사
+  * 회원가입시 사용하고자하는 닉네임이 변할때 마다 사용가능한지여부 확인
+  * Detail page, Editor page 기능 및 css틀 작성
+  * Detail page에서 좋아요와 댓글 작성 및 확인기능 작성
+
+
 </details>
 <br>
+
 
 
 
